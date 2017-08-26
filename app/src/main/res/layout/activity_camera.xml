@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.metalliczmedia.business.Camera">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/boardwidth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_top_bg"
+                android:gravity="center"
+                android:hint="WIDTH (Inches)"
+                android:numeric="decimal"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="#cccccc" />
+
+            <EditText
+                android:id="@+id/boardheight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_top_bg"
+                android:gravity="center"
+                android:hint="HEIGHT (Inches)"
+                android:numeric="decimal"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="#cccccc" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/boardbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorAccent"
+        android:padding="5dp"
+        android:text="Add Product"
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/boardpic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/camera32"
+            android:maxHeight="250dp"
+            android:maxWidth="250dp"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/gallerypic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/gallery32"
+            android:maxHeight="250dp"
+            android:layout_marginLeft="10dp"
+            android:maxWidth="250dp"
+            android:scaleType="centerInside" />
+       <!-- <ImageView
+            android:id="@+id/croppic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/crop"
+            android:maxHeight="250dp"
+            android:layout_marginLeft="10dp"
+            android:maxWidth="250dp"
+            android:scaleType="centerInside" />-->
+    </LinearLayout>
+
+  <!--  <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lay1"
+        android:layout_below="@+id/card_view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/imageView" />-->
+
+
+    <com.metalliczmedia.business.DrawingView
+        android:id="@+id/drawing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/card_view"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_above="@+id/lay1"
+        android:background="#FFFFFFFF"
+     >
+    </com.metalliczmedia.business.DrawingView>
+
+
+</RelativeLayout>

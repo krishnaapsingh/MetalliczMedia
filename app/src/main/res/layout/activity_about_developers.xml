@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorAccent"
+    tools:context="com.metalliczmedia.business.AboutDevelopers">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <View
+                    android:layout_height="2dp"
+                    android:layout_width="fill_parent"
+                    />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:id="@+id/tejenderimage"
+                android:src="@drawable/tejender"/>
+                <View
+                    android:layout_height="2dp"
+                    android:layout_width="fill_parent"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tejender Singh"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="#202C39"
+                    android:singleLine="true"/>
+                <View
+                    android:layout_height="1dp"
+                    android:layout_width="fill_parent"
+                    android:background="#FFFFFF"
+                    />
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tejenderbutton1"
+                android:background="#202C39"
+                android:textColor="#FFFFFF"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:text="Call"/>
+                <View
+                    android:layout_height="1dp"
+                    android:layout_width="fill_parent"
+                    android:background="@color/colorAccent"
+                    />
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/tejenderbutton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#202C39"
+                android:textColor="#FFFFFF"
+                android:text="Message"/>
+                <View
+                    android:layout_height="1dp"
+                    android:layout_width="fill_parent"
+                    android:background="@color/colorAccent"
+                    />
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:id="@+id/tejenderbutton3"
+                android:layout_height="wrap_content"
+                android:background="#202C39"
+                android:textColor="#FFFFFF"
+                android:text="Email"/>
+                <View
+                    android:layout_height="1dp"
+                    android:layout_width="fill_parent"
+                    android:background="@color/colorAccent"
+                    />
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tejenderbutton4"
+                android:background="#202C39"
+                android:textColor="#FFFFFF"
+                android:text="Linkedin Profile"/>
+
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:layout_marginLeft="2dp"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <View
+                    android:layout_height="2dp"
+                    android:layout_width="fill_parent"
+                    />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/lakshay"
+                android:layout_gravity="center"
+                android:id="@+id/lakshayimage"
+
+                />
+                <View
+                    android:layout_height="2dp"
+                    android:layout_width="fill_parent"
+                    android:background="#FFFFFF"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lakshay Swani"
+                    android:textSize="20sp"
+                    android:textColor="#202C39"
+                    android:textAlignment="center"
+                    android:singleLine="true"/>
+                <View
+                    android:layout_height="1dp"
+                    android:layout_width="fill_parent"
+                    android:background="#FFFFFF"
+                    />
+
+                <android.support.v7.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lakshaybutton1"
+                    android:background="#202C39"
+                    android:textColor="#FFFFFF"
+                android:text="Call"/>
+                <View
+                    android:layout_height="1dp"
+                    android:layout_width="fill_parent"
+                    android:background="@color/colorAccent"
+                    />
+
+                <android.support.v7.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lakshaybutton2"
+                android:background="#202C39"
+                android:textColor="#FFFFFF"
+                android:text="Message"/>
+                <View
+                    android:layout_height="1dp"
+                    android:layout_width="fill_parent"
+                    android:background="@color/colorAccent"
+                    />
+
+                <android.support.v7.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lakshaybutton3"
+                android:background="#202C39"
+                android:textColor="#FFFFFF"
+                android:text="Email"/>
+                <View
+                android:layout_height="1dp"
+                android:layout_width="fill_parent"
+                android:background="@color/colorAccent"
+                />
+
+                <android.support.v7.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lakshaybutton4"
+                android:background="#202C39"
+                android:textColor="#FFFFFF"
+                android:text="Linkedin Profile"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

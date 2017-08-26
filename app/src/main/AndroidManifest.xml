@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.metalliczmedia.business">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- Camera features - recommended -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/mmnew"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:theme">
+        <activity
+            android:name=".Welcome"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Clients"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Recee"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Orders"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BeforeLogin"
+            android:screenOrientation="portrait">
+
+
+            <!--  <intent-filter>
+                  <action android:name="android.intent.action.MAIN" />
+
+                  <category android:name="android.intent.category.LAUNCHER" />
+              </intent-filter>-->
+
+        </activity>
+        <activity
+            android:name=".SignUpConfirm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Camera"
+            android:screenOrientation="portrait" />
+
+        <!--  <provider
+              android:name="com.adobe.creativesdk.aviary.internal.cds.CdsProvider"
+              android:authorities="${applicationId}.CdsProvider"
+              android:exported="false" />
+  -->
+        <activity
+            android:name=".Tempo"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DealerDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AfterClient"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Installation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ClientHome"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ClientView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Camera1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PptSent"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutDevelopers"
+            android:label="About The Developers"
+            android:screenOrientation="portrait"
+            android:theme="@style/AboutDevelopersTheme" />
+        <activity
+            android:name=".YourActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CropResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OppoHome"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".ImageCaptureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ImgeCropActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignatureActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+    </application>
+
+</manifest>

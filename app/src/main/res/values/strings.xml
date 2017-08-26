@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Metallicz Media</string>
+    <string name="title_activity_recee">Recee</string>
+
+    <string name="title_section1">Internal Branding</string>
+
+    <string name="title_section2">External Branding</string>
+
+    <string name="title_section3">Section 3</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_temp">Temp</string>
+    <string name="title_activity_tempo">Tempo</string>
+    <string name="title_activity_after_client">AfterClient</string>
+    <string name="main_action_rotate">Rotate</string>
+    <string name="main_action_crop">Crop</string>
+    <string name="result_image_desc">crop result</string>
+
+    <string name="main_action_save">Save</string>
+    <string name="agreement">I agree the terms and conditions.</string>
+    <string name="clear_pad">Clear</string>
+    <string name="save_signature">Save</string>
+    <string name="compress_signature">Scale</string>
+
+
+</resources>

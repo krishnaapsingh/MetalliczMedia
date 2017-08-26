@@ -1,0 +1,63 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="Logintab">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        >
+
+        <EditText
+            android:id="@+id/usernamet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_top_bg"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:hint="  Username"
+            android:textColorHint="#cccccc"
+            android:drawableLeft="@drawable/email"/>
+        <EditText
+            android:id="@+id/passwordt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bottom_bg"
+            android:layout_marginTop="-2dp"
+            android:padding="10dp"
+            android:hint=" Password"
+            android:singleLine="true"
+            android:textColorHint="#cccccc"
+            android:password="true"
+            android:drawableLeft="@drawable/password"/>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/signint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="4dp"
+            android:text="Sign In"
+            android:textColor="#FFF"
+            android:background="@color/colorAccent"
+            />
+        <TextView
+            android:id="@+id/forgotpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-2dp"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="Forgot your password?"
+            android:textSize="15sp"
+            android:textColor="@color/colorAccent"
+            android:clickable="true"
+            >
+        </TextView>
+    </LinearLayout>
+</FrameLayout>

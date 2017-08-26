@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.metalliczmedia.business.DealerDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!--<EditText
+                android:id="@+id/appid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_top_bg"
+                android:drawableLeft="@drawable/store"
+                android:hint="  App ID"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="#cccccc" />
+
+            <EditText
+                android:id="@+id/rtcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_top_bg"
+                android:drawableLeft="@drawable/store"
+                android:hint="  RT Code"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="#cccccc" />-->
+
+            <EditText
+                android:id="@+id/storename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_top_bg"
+                android:drawableLeft="@drawable/store"
+                android:hint="  Store Name"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="#cccccc" />
+
+            <EditText
+                android:id="@+id/storeaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-2dp"
+                android:background="@drawable/edittext_bottom_bg"
+                android:drawableLeft="@drawable/address"
+                android:hint="  Address"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="#cccccc" />
+
+            <LinearLayout
+                android:id="@+id/storecityLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                >
+
+                <EditText
+                    android:id="@+id/storecity"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-2dp"
+                    android:background="@drawable/edittext_bottom_bg"
+                    android:drawableLeft="@drawable/address"
+                    android:hint="  City"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColorHint="#cccccc" />
+                <ImageView
+                    android:id="@+id/imgstorecity"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_gravity="center_vertical|center_horizontal"
+
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/refresh"
+                    />
+            </LinearLayout>
+        <LinearLayout
+            android:id="@+id/storestateLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+            <EditText
+                android:id="@+id/storestate"
+                android:layout_width="0dp"
+                android:layout_weight="0.9"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-2dp"
+                android:background="@drawable/edittext_bottom_bg"
+                android:drawableLeft="@drawable/address"
+                android:hint="  State"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="#cccccc" />
+
+            <ImageView
+                android:id="@+id/imgstorestate"
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_height="wrap_content"
+                android:src="@drawable/refresh"
+                />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/storepincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_top_bg"
+                android:drawableLeft="@drawable/address"
+                android:hint="  Pincode"
+                android:numeric="integer"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="#cccccc" />
+
+            <EditText
+                android:id="@+id/storesalesperson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-2dp"
+                android:background="@drawable/edittext_bottom_bg"
+                android:drawableLeft="@drawable/user"
+                android:hint="  Sales Person"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="#cccccc" />
+
+            <EditText
+                android:id="@+id/storecardpic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-2dp"
+                android:background="@drawable/edittext_bottom_bg"
+                android:drawableLeft="@drawable/card"
+                android:editable="false"
+                android:hint="  Visiting Card"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="#cccccc"
+                android:textSize="18sp"></EditText>
+
+            <EditText
+                android:id="@+id/sign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-2dp"
+                android:background="@drawable/edittext_bottom_bg"
+                android:drawableLeft="@drawable/card"
+                android:editable="false"
+                android:hint="  Digital Signature"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="#cccccc"></EditText>
+
+            <TextView
+                android:id="@+id/tnc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-2dp"
+                android:clickable="true"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="By Clicking Submit you agree Terms And Conditions"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"></TextView>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/storesubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@color/colorAccent"
+                android:padding="10dp"
+                android:text="SUBMIT"
+                android:textColor="#FFF" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

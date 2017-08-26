@@ -1,0 +1,106 @@
+<style>
+
+
+BODY {
+background: #000000;
+  background-size: 10dp;
+  font: 16em/1 Arial;
+}
+
+.text--line {
+  font-size: 2dp;
+	font-family: monospace;
+}
+
+svg {
+  position: absolute;
+  width: 2dp;
+  height: 2dp;
+}
+
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 7% 28%;
+  stroke-width: 8px;
+  -webkit-animation: stroke-offset 7s  linear;
+          animation: stroke-offset 7s  linear;
+}
+.text-copy:nth-child(1) {
+/*   stroke: #360745; */
+  stroke: #FFF;
+  stroke-dashoffset: 7%;
+}
+.text-copy:nth-child(2) {
+/*   stroke: #D61C59; */
+  stroke: #FFF;
+
+  stroke-dashoffset: 14%;
+}
+.text-copy:nth-child(3) {
+/*   stroke: #E7D84B; */
+  stroke: #FFF;
+  stroke-dashoffset: 21%;
+}
+.text-copy:nth-child(4) {
+  stroke: #FFF;
+  stroke-dashoffset: 28%;
+}
+.text-copy:nth-child(5) {
+  stroke: #FFF;
+  stroke-dashoffset: 35%;
+}
+
+@-webkit-keyframes stroke-offset {
+  10% {
+    stroke-dashoffset: 7%;
+    stroke-dasharray: 0 17.1%;
+  }
+}
+
+@keyframes stroke-offset {
+  50% {
+    stroke-dashoffset: 35%;
+    stroke-dasharray: 0 87.5%;
+  }
+}
+
+</style>
+
+<html>
+<body>
+<svg viewBox="0 0 1100 600">
+  <symbol id="s-text">
+    <text text-anchor="middle"
+          x="50%"
+          y="35%"
+          class="text--line"
+          >
+Metallicz    </text>
+    <text text-anchor="middle"
+          x="50%"
+          y="68%"
+          class="text--line2"
+          >
+      Media
+    </text>
+    
+  </symbol>
+  
+  <g class="g-ants">
+    <use xlink:href="#s-text"
+      class="text-copy"></use>     
+    <use xlink:href="#s-text"
+      class="text-copy"></use>     
+    <use xlink:href="#s-text"
+      class="text-copy"></use>     
+    <use xlink:href="#s-text"
+      class="text-copy"></use>     
+    <use xlink:href="#s-text"
+      class="text-copy"></use>     
+  </g>
+  
+  
+</svg>
+</body>
+</html>

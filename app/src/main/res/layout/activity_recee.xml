@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ReceeTabs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Recee">
+
+    </android.support.v4.view.ViewPager>
+
+    <fragment
+        android:id="@+id/receeorderfrag"
+        class="com.metalliczmedia.business.ReceeOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+    </fragment>
+
+</RelativeLayout>

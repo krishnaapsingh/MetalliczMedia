@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.metalliczmedia.business.Signuptab">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            >
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_top_bg"
+                android:padding="10dp"
+                android:hint="  Name"
+                android:singleLine="true"
+                android:textColorHint="#cccccc"
+                android:drawableLeft="@drawable/user"/>
+            <EditText
+                android:id="@+id/user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:background="@drawable/edittext_bottom_bg"
+                android:layout_marginTop="-2dp"
+                android:padding="10dp"
+                android:hint=" Username"
+                android:textColorHint="#cccccc"
+                android:drawableLeft="@drawable/email"/>
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_top_bg"
+                android:padding="10dp"
+                android:password="true"
+                android:singleLine="true"
+                android:hint="Password"
+                android:textColorHint="#cccccc"
+                android:drawableLeft="@drawable/password"/>
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bottom_bg"
+                android:layout_marginTop="-2dp"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:hint=" Mobile No (10 Digits)"
+                android:textColorHint="#cccccc"
+                android:inputType="phone"
+                android:drawableLeft="@drawable/phone"/>
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="4dp"
+                android:text="Sign Up"
+                android:textColor="#FFF"
+                android:background="@color/colorAccent"
+                />
+        </LinearLayout>
+
+</FrameLayout>
